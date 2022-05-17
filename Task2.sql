@@ -14,7 +14,6 @@ INSERT tblBook VALUES('Война и мир')
 INSERT tblBook VALUES('Преступление и наказание')
 INSERT tblBook VALUES('Мастер и Маргарита')
 INSERT tblBook VALUES('Тихий дон')
-
 INSERT tblBookInLibrary VALUES(1, '2006-05-01')
 INSERT tblBookInLibrary VALUES(3, '2004-07-05')
 
