@@ -47,6 +47,7 @@ namespace VDComTest
                 carriage.IsLightOn = false;
         }
     }
+    
     public class Train
     {
         public Carriage Tail { get; set; }
