@@ -12,6 +12,7 @@ INSERT tblPeriod VALUES(7, 30)
 INSERT tblPeriod VALUES(9, 40)
 INSERT tblPeriod VALUES(10, 40)
 
+--1)
 WITH PeriodWithRowNumber AS
 (
 	SELECT *, ROW_NUMBER() OVER(PARTITION BY Value ORDER BY Value ASC) AS RowNumber
@@ -21,6 +22,8 @@ SELECT PeriodID, Value
 FROM PeriodWithRowNumber
 WHERE RowNumber = 1
 
+
+--2)
 WITH PeriodWithRowNumber AS
 (
 	SELECT *, ROW_NUMBER() OVER(PARTITION BY Value ORDER BY Value ASC) AS RowNumber
